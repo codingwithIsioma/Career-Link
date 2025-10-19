@@ -62,7 +62,7 @@ function Upload({ cuteMode, feedback, setFeedback }) {
         });
       }, 200);
 
-      fetch(process.env.REACT_APP_UPLOAD_URL, {
+      fetch(`${process.env.REACT_APP_RENDER_URL}/api/v1/jobs/upload_resume`, {
         method: "POST",
         body: formData,
       })
@@ -101,7 +101,7 @@ function Upload({ cuteMode, feedback, setFeedback }) {
       uuid: uploadResult,
       userPreferenceList: [userPreferences],
     };
-    fetch(process.env.REACT_APP_GET_URL, {
+    fetch(`${process.env.REACT_APP_RENDER_URL}/api/v1/jobs/recommend_jobs`, {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(userData),

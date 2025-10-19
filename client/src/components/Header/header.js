@@ -24,7 +24,7 @@ function Header({ setPage, getSearchValue, getSearchResults, setIsLoading }) {
       setIsLoading(true);
 
       // run the fetch function to actually get the results from the search.
-      fetch(process.env.REACT_APP_SEARCH_URL, {
+      fetch(`${process.env.REACT_APP_RENDER_URL}/api/v1/jobs/search_jobs`, {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(searchData),
