@@ -10,7 +10,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "https://career-link-zdcl.onrender.com",
-      "https://careerslink.netlify.app/",
+      "https://careerslink.netlify.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
