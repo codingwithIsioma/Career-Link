@@ -7,7 +7,7 @@ const { port } = require("../config/dotenv");
 // accepts requests from the frontend
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://career-link-zdcl.onrender.com"],
     credentials: true,
   })
 );
