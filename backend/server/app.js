@@ -1,8 +1,8 @@
-const express = require("../backend/node_modules/express");
-const fileUpload = require("../backend/node_modules/express-fileupload");
-const cors = require("../backend/node_modules/cors");
+const express = require("express");
+const fileUpload = require("express-fileupload");
+const cors = require("cors");
 const app = express();
-const { port } = require("../backend/config/dotenv");
+const { port } = require("../config/dotenv");
 
 // accepts requests from the frontend
 app.use(
