@@ -12,6 +12,7 @@ app.use(
       "https://career-link-zdcl.onrender.com",
       "https://careerslink.netlify.app/",
     ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
